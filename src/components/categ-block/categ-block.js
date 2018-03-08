@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 // import LeftBar from './leftbar.js'
 // import CategName from './categ-name.js'
 // import ProjImg from './proj-img.js'
-import ProjInfo from './proj-info/proj-info.js'
+// import ProjInfo from './proj-info/proj-info.js'
 
 class CategBlock extends Component {
   render () {
@@ -11,7 +11,7 @@ class CategBlock extends Component {
         {/* <LeftBar /> */}
         {/* <CategName /> */}
         {/* <ProjImg /> */}
-        <ProjInfo />
+        {/* <ProjInfo /> */}
       </div>
     )
   }

@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 
+# dependencies
+/.sass-cache
+
 # testing
 /coverage
 

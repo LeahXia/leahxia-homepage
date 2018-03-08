@@ -2,6 +2,8 @@
   "name": "leahxia-homepage",
   "version": "0.1.0",
   "private": true,
+  "author": "Leah Xia",
+  "homepage": "https://www.leahxia.com/homepage",
   "dependencies": {
     "ajv": "^6.2.1",
     "react": "^16.2.0",
