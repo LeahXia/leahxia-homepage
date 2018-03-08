@@ -56,6 +56,7 @@ body {
 
 /* Font Colors */
 /* Font Size */
+/* Margin and Size */
 /*typography setup */
 h1 {
   font-size: 36px;
@@ -64,14 +65,88 @@ h1 {
   letter-spacing: -1.44px;
   color: #000; }
 
-h2 {
+h2, #menu-dropdown ul li a {
   font-size: 12px;
   font-weight: 300;
   line-height: 16px;
-  color: #878787;
   text-align: center; }
 
+h2 {
+  letter-spacing: 0.05px;
+  color: #B7B7B7; }
+
+/*nav setup */
+#nav-mobile, #nav-mobile ul {
+  height: 39px; }
+
+#nav-mobile {
+  background: #000;
+  color: #fff; }
+  #nav-mobile ul {
+    position: relative;
+    display: flex;
+    justify-content: space-between; }
+    #nav-mobile ul #logo {
+      font-size: 20px;
+      line-height: 24px;
+      margin-left: 21px;
+      padding-top: 6px; }
+    #nav-mobile ul #bars {
+      width: 22px;
+      padding-top: 10px;
+      margin-right: 21px; }
+      #nav-mobile ul #bars span {
+        background: #fff;
+        width: 22px;
+        height: 1px;
+        border-radius: 1.5px;
+        margin-top: 4px;
+        display: block; }
+      #nav-mobile ul #bars .bar1-trans, #nav-mobile ul #bars .bar3-trans {
+        transform-origin: 50% 0%;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+      #nav-mobile ul #bars .bar1-trans {
+        transform: translate(0, 5px) rotate(135deg); }
+      #nav-mobile ul #bars .bar2-trans {
+        opacity: 0; }
+      #nav-mobile ul #bars .bar3-trans {
+        transform: translate(0, -6px) rotate(45deg); }
+      #nav-mobile ul #bars .bar-back {
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+      #nav-mobile ul #bars .bar2-back {
+        opacity: 1;
+        transition: opacity 0.6s linear; }
+    #nav-mobile ul .hidden, #nav-mobile ul .show {
+      transform-origin: 0% 0%;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+    #nav-mobile ul .hidden {
+      transform: translate(100vw, 0); }
+    #nav-mobile ul .show {
+      transform: none; }
+    #nav-mobile ul #menu-dropdown {
+      position: fixed;
+      top: 39px;
+      right: 0;
+      width: 148px;
+      height: 100vh;
+      background: #000;
+      text-align: center;
+      padding-top: 8px; }
+      #nav-mobile ul #menu-dropdown ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 45px; }
+        #nav-mobile ul #menu-dropdown ul li {
+          line-height: 35px;
+          border-bottom: 0.5px solid #BEC8D3;
+          margin: 0 9px; }
+        #nav-mobile ul #menu-dropdown ul li:first-of-type {
+          border-top: 0.5px solid #BEC8D3; }
+
 /*header setup */
+#app {
+  width: 100vw; }
+
 #header #name {
   display: flex;
   margin-top: 15px; }

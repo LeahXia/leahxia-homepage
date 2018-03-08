@@ -1,1 +1,86 @@
- /*nav setup*/
+/*nav setup*/
+#nav-mobile, #nav-mobile ul
+  height: $nav-height
+
+
+#nav-mobile
+  background: $primary-color
+  color: $text-on-black-color
+
+  ul
+    position: relative
+    display: flex
+    justify-content: space-between
+
+    #logo
+      font-size: 20px
+      line-height: 24px
+      margin-left: $margin-left
+      padding-top: 6px
+
+    #bars
+      width: 22px
+      padding-top: 10px
+      margin-right: $margin-left
+
+      span
+        background: $text-on-black-color
+        width: 22px
+        height: 1px
+        border-radius: 1.5px
+        margin-top: 4px
+        display: block
+
+      .bar1-trans, .bar3-trans
+        transform-origin: 50% 0%
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+
+      .bar1-trans
+        transform: translate(0, 5px) rotate(135deg)
+
+      .bar2-trans
+        opacity: 0
+
+      .bar3-trans
+        transform: translate(0, -6px) rotate(45deg)
+
+      .bar-back
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+
+      .bar2-back
+        opacity: 1
+        transition: opacity 0.6s linear
+
+
+    .hidden, .show
+      transform-origin: 0% 0%
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+
+    .hidden
+      transform: translate(100vw, 0)
+
+    .show
+      transform: none
+
+    #menu-dropdown
+      position: fixed
+      top: $nav-height
+      right: 0
+      width: 148px
+      height: 100vh
+      background: $primary-color
+      text-align: center
+      padding-top: 8px
+
+      ul
+        display: flex
+        flex-direction: column
+        margin-top: 45px
+
+        li
+          line-height: 35px
+          border-bottom: $bar-height solid $bar-color
+          margin: 0 9px
+
+        li:first-of-type
+          border-top: $bar-height solid $bar-color

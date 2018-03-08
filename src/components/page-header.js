@@ -4,9 +4,9 @@ const PageHeader = (props) => {
   return (
     <div id='header'>
       <div id='name'>
-        <span class='title-bar' />
+        <span className='title-bar' />
         <h1>LEAH XIA</h1>
-        <span class='title-bar' />
+        <span className='title-bar' />
       </div>
       <div id='title'>
         <h2>App & Web Developer from</h2>
