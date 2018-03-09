@@ -1,0 +1,87 @@
+.categ-blook
+  width: 100vw
+  height: auto
+
+  .categ
+    margin-left: $margin-left
+    margin-right: $margin-right
+    border-left: $bar-height solid $bar-color
+    padding-top: $categ-margin-top
+    padding-bottom: $categ-margin-bottom
+
+    .categ-title
+      height: 23px
+
+      h3
+        display: inline-block
+        // height: 23px
+
+      .dot
+        height: 23px
+        font-size: 29px
+        margin-left: $dot-margin
+        color: $title-dot-color
+
+      .categ-name
+        border-bottom: $bar-height solid $bar-color
+        margin-left: $lang-margin-left
+        position: relative
+        top: -5px
+        padding-bottom: 2px
+
+
+    .proj-detail
+      display: flex
+      flex-wrap: wrap
+      margin-left: 17px
+
+      .proj-info
+        display: flex
+        margin-top: $margin-top
+
+        .proj-text
+          margin-left: 12px
+
+          h4
+            margin-bottom: 4px
+
+          .lang p
+            display: inline-block
+
+          .lang-name
+            margin-left: $lang-margin-left
+
+.theme-black
+  background: $primary-color
+  h3, h4, p
+    color: $text-on-black-color
+
+.theme-white
+  background: $secondary-color
+
+#app .categ-blook .singleCateg
+  padding-top: 0
+  margin-top: $categ-margin-top
+
+  .dot
+    margin-top: $dot-margin
+
+  .proj-info
+    width: 100%
+    position: relative
+
+    .proj-img
+      position: absolute
+      right: 0
+      top: 0px
+      box-shadow: none
+      width: 157px
+      height: 98px
+
+.categ-blook .categ .proj-detail .proj-info .singleText
+  width: 100%
+  margin-left: 0
+  margin-top: $dot-margin
+
+  .proj-name
+    color: $highlight-color

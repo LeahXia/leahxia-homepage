@@ -2,11 +2,14 @@ import React, { Component } from 'react'
 
 class NavMobile extends Component {
 
-  state = {
-    showHideDropdown:'hidden',
-    bar1:'bar-back',
-    bar2:'',
-    bar3:''
+  constructor(props){
+    super(props)
+    this.state = {
+      showHideDropdown:'hidden',
+      bar1:'bar-back',
+      bar2:'',
+      bar3:''
+    }
   }
 
   toggleDropdown = () => {

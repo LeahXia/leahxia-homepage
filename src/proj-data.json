@@ -1,0 +1,192 @@
+[
+  {
+    "catId": 1,
+    "catName": "App development",
+    "projs": [
+      {
+        "projId": 11,
+        "projName":"Share Washi App",
+        "projImg":"ShareWashi",
+        "langs":[
+          {
+            "langId":111,
+            "langName":"Swift"
+          },
+          {
+            "langId":112,
+            "langName":"Node.js"
+          },
+          {
+            "langId":113,
+            "langName":"Firebase SDK"
+          },
+          {
+            "langId":114,
+            "langName":"Cloud Function"
+          },
+          {
+            "langId":115,
+            "langName":"Stripe Connect API"
+          }]
+      }
+    ]
+  },
+  {
+    "catId": 2,
+    "catName": "Client websites",
+    "projs": [
+      {
+        "projId": 21,
+        "projName":"Res Order",
+        "projImg":"ResOrder",
+        "langs":[
+          {
+            "langId":211,
+            "langName":"React"
+          },
+          {
+            "langId":212,
+            "langName":"Node.js"
+          },
+          {
+            "langId":213,
+            "langName":"MongoDB"
+          },
+          {
+            "langId":214,
+            "langName":"jQuery"
+          },
+          {
+            "langId":215,
+            "langName":"Sass"
+          },
+          {
+            "langId":216,
+            "langName":"Bootstrap"
+          }
+        ]
+      },
+      {
+        "projId": 22,
+        "projName":"Spiruvive",
+        "projImg":"Spiruvive",
+        "langs":[
+          {
+            "langId":221,
+            "langName":"HTML"
+          },
+          {
+            "langId":222,
+            "langName":"SCSS"
+          },
+          {
+            "langId":223,
+            "langName":"Bootstrap"
+          }
+        ]
+      },
+      {
+        "projId": 23,
+        "projName":"Creative-design",
+        "projImg":"CreativeDesign",
+        "langs":[
+          {
+            "langId":231,
+            "langName":"HTML"
+          },
+          {
+            "langId":232,
+            "langName":"CSS"
+          },
+          {
+            "langId":233,
+            "langName":"Foundation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "catId": 3,
+    "catName": "Website replicas",
+    "projs": [
+      {
+        "projId": 31,
+        "projName":"The Next Web",
+        "projImg":"TNW",
+        "langs":[
+          {
+            "langId":311,
+            "langName":"HTML"
+          },
+          {
+            "langId":312,
+            "langName":"CSS"
+          },
+          {
+            "langId":313,
+            "langName":"Flexbox"
+          },
+          {
+            "langId":314,
+            "langName":"jQuery"
+          },
+          {
+            "langId":315,
+            "langName":"Google-ads"
+          }
+        ]
+      },
+      {
+        "projId": 32,
+        "projName":"Apple",
+        "projImg":"Apple",
+        "langs":[
+          {
+            "langId":321,
+            "langName":"HTML"
+          },
+          {
+            "langId":322,
+            "langName":"CSS"
+          },
+          {
+            "langId":323,
+            "langName":"Flexbox"
+          },
+          {
+            "langId":324,
+            "langName":"jQuery"
+          },
+          {
+            "langId":325,
+            "langName":"Google-search"
+          }
+        ]
+      },
+      {
+        "projId": 33,
+        "projName":"Tribute page",
+        "projImg":"Tribute",
+        "langs":[
+          {
+            "langId":331,
+            "langName":"HTML"
+          },
+          {
+            "langId":332,
+            "langName":"CSS"
+          },
+          {
+            "langId":333,
+            "langName":"Bootstrap"
+          },
+          {
+            "langId":334,
+            "langName":"jQuery"
+          }
+        ]
+      }
+    ]
+  }
+]

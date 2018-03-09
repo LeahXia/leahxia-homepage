@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import '../css/main.css'
-
 import Nav from './nav/nav'
 import PageHeader from './page-header'
 import CategBlock from './categ-block/categ-block'
