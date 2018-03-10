@@ -10,16 +10,16 @@ body {
 /* Font Colors */
 /* Margin and size */
 /*typography setup */
-h3 {
+h3, h4 {
   font-size: 14px;
+  line-height: 17px; }
+
+h3 {
   font-weight: 300;
-  line-height: 17px;
   color: #292929; }
 
 h4 {
-  font-size: 14px;
   font-weight: 700;
-  line-height: 17px;
   color: #757575; }
 
 p {

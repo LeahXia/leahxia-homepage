@@ -79,6 +79,16 @@ h2 {
   letter-spacing: 0.05px;
   color: #B7B7B7; }
 
+#footer h2, #footer p {
+  color: #fff; }
+#footer h2 {
+  font-size: 18px;
+  font-weight: 400; }
+#footer p {
+  font-size: 11px;
+  font-weight: 300;
+  text-align: center; }
+
 /*nav setup */
 .scrollable {
   overflow: scroll; }
@@ -172,5 +182,34 @@ h2 {
     margin-top: 26px; }
 #header #title {
   margin-top: 3px; }
+
+/*footer setup */
+#footer {
+  width: 100vw;
+  background: #3C3C3C;
+  display: flex;
+  flex-direction: column; }
+  #footer #footer-info {
+    margin-top: 28px; }
+    #footer #footer-info #location {
+      display: none; }
+    #footer #footer-info h2 {
+      margin-bottom: 6px; }
+    #footer #footer-info p {
+      margin-top: 0px; }
+    #footer #footer-info .contact-info {
+      display: flex;
+      width: 100px;
+      margin: 0 auto; }
+      #footer #footer-info .contact-info img {
+        width: 23px;
+        height: 23px;
+        display: none; }
+      #footer #footer-info .contact-info p {
+        width: 100px; }
+    #footer #footer-info #social {
+      text-align: center; }
+      #footer #footer-info #social img {
+        margin: 15px 8px 25px; }
 
 /*# sourceMappingURL=main.css.map */

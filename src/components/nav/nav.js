@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import NavMobile from './nav-mobile'
-import NavDesk from './nav-desktop'
+import NavDesk from './nav-desk'
 
 class Nav extends Component {
   render () {

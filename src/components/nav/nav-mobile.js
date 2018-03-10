@@ -71,7 +71,7 @@ class NavMobile extends Component {
                 <a onClick={this.dropdownItemClicked.bind(this, 'ClientWeb')} >About</a>
               </li>
               <li>
-                <a onClick={this.dropdownItemClicked.bind(this, 'ClientWeb')} >Contact</a>
+                <a onClick={this.dropdownItemClicked.bind(this, 'footer')} >Contact</a>
               </li>
             </ul>
           </li>

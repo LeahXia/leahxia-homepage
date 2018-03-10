@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Nav from './nav/nav'
 import PageHeader from './page-header'
 import CategBlock from './categ-block/categ-block'
-// import Footer from './footer'
+import Footer from './footer/footer'
 
 class App extends Component {
   render () {
@@ -11,7 +11,7 @@ class App extends Component {
         <Nav />
         <PageHeader />
         <CategBlock />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     )
   }
