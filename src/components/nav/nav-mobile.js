@@ -44,11 +44,9 @@ class NavMobile extends Component {
     })
   }
 
-  scrollIntoView = (id) => {
-    console.log(id);
-    var view = document.getElementById(id)
-    console.log(view)
-    view.scrollIntoView()
+  dropdownItemClicked = (id) => {
+    this.toggleDropdown()
+    document.getElementById(id).scrollIntoView()
   }
 
   render () {
@@ -64,16 +62,16 @@ class NavMobile extends Component {
           <li id='menu-dropdown' className={this.state.showHideDropdown}>
             <ul>
               <li>
-                <a onClick={this.scrollIntoView.bind(this, 'nav')} >App Portfolio</a>
+                <a onClick={this.dropdownItemClicked.bind(this, 'nav')} >App Portfolio</a>
               </li>
               <li>
-                <a onClick={this.scrollIntoView.bind(this, 'ClientWeb')} >Web Portfolio</a>
+                <a onClick={this.dropdownItemClicked.bind(this, 'ClientWeb')} >Web Portfolio</a>
               </li>
               <li>
-                <a>About</a>
+                <a onClick={this.dropdownItemClicked.bind(this, 'ClientWeb')} >About</a>
               </li>
               <li>
-                <a>Contact</a>
+                <a onClick={this.dropdownItemClicked.bind(this, 'ClientWeb')} >Contact</a>
               </li>
             </ul>
           </li>
