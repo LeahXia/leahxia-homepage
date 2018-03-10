@@ -1,7 +1,13 @@
 /*nav setup*/
+.scrollable
+  overflow: scroll
+
+#root .unscrollable
+  height: 100vh
+  overflow: hidden
+
 #nav-mobile, #nav-mobile ul
   height: $nav-height
-
 
 #nav-mobile
   background: $primary-color
@@ -72,6 +78,7 @@
       background: $primary-color
       text-align: center
       padding-top: 8px
+      z-index: 1
 
       ul
         display: flex

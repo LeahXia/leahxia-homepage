@@ -45,6 +45,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+a {
+  color: inherit;
+  text-decoration: none; }
+
 /* Background Colors */
 /* Font Colors */
 /* Font Family */
@@ -76,6 +80,13 @@ h2 {
   color: #B7B7B7; }
 
 /*nav setup */
+.scrollable {
+  overflow: scroll; }
+
+#root .unscrollable {
+  height: 100vh;
+  overflow: hidden; }
+
 #nav-mobile, #nav-mobile ul {
   height: 39px; }
 
@@ -132,7 +143,8 @@ h2 {
       height: 100vh;
       background: #3C3C3C;
       text-align: center;
-      padding-top: 8px; }
+      padding-top: 8px;
+      z-index: 1; }
       #nav-mobile ul #menu-dropdown ul {
         display: flex;
         flex-direction: column;

@@ -6,6 +6,7 @@ class NavMobile extends Component {
     super(props)
     this.state = {
       showHideDropdown:'hidden',
+      pageScroll:'scroll',
       bar1:'bar-back',
       bar2:'',
       bar3:''
@@ -13,27 +14,41 @@ class NavMobile extends Component {
   }
 
   toggleDropdown = () => {
-    var isShown = 'hidden'
-    isShown = this.state.showHideDropdown === 'hidden' ? 'show' : 'hidden'
-
-    if (this.state.bar1 === 'bar-back'){
-      this.setState({
-        bar1: 'bar1-trans',
-        bar2: 'bar2-trans',
-        bar3: 'bar3-trans'
-      })
-    }else{
-      this.setState({
-        bar1: 'bar-back',
-        bar2: 'bar2-back',
-        bar3: 'bar-back'
-      })
+    var barClass1, barClass2, barClass3, isShown, pageScroll
+    if (this.state.bar1 === 'bar-back') {
+      barClass1 = 'bar1-trans'
+      barClass2 = 'bar2-trans'
+      barClass3 = 'bar3-trans'
+    } else {
+      barClass1 = 'bar-back'
+      barClass2 = 'bar2-back'
+      barClass3 = 'bar-back'
     }
 
-    this.setState({
-      showHideDropdown: isShown
+    if (this.state.showHideDropdown === 'hidden') {
+      isShown = 'show'
+      pageScroll = 'unscrollable'
+    } else {
+      isShown = 'hidden'
+      pageScroll = 'scrollable'
+    }
 
+    var body = document.getElementById('app')
+    body.className = pageScroll
+
+    this.setState({
+      bar1: barClass1,
+      bar2: barClass2,
+      bar3: barClass3,
+      showHideDropdown: isShown
     })
+  }
+
+  scrollIntoView = (id) => {
+    console.log(id);
+    var view = document.getElementById(id)
+    console.log(view)
+    view.scrollIntoView()
   }
 
   render () {
@@ -41,7 +56,7 @@ class NavMobile extends Component {
       <div id='nav-mobile'>
         <ul>
           <li id='logo'>LX</li>
-          <li id='bars' onClick={this.toggleDropdown}>
+          <li id='bars' onClick={this.toggleDropdown.bind(this)}>
             <span id='bar1' className={this.state.bar1}/>
             <span id='bar2' className={this.state.bar2}/>
             <span id='bar3' className={this.state.bar3}/>
@@ -49,10 +64,10 @@ class NavMobile extends Component {
           <li id='menu-dropdown' className={this.state.showHideDropdown}>
             <ul>
               <li>
-                <a>App Portfolio</a>
+                <a onClick={this.scrollIntoView.bind(this, 'nav')} >App Portfolio</a>
               </li>
               <li>
-                <a>Web Portfolio</a>
+                <a onClick={this.scrollIntoView.bind(this, 'ClientWeb')} >Web Portfolio</a>
               </li>
               <li>
                 <a>About</a>

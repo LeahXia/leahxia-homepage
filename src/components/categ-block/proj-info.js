@@ -8,7 +8,7 @@ class ProjInfo extends Component {
         <img
           src={require(`../../img/${this.props.projImg}.png`)}
           className='proj-img'
-          alt='project image'
+          alt='project'
         />
         <div className={'proj-text ' + this.props.singleProj[1]}>
           <h4 className='proj-name'>{this.props.projName}</h4>

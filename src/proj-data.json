@@ -2,6 +2,7 @@
   {
     "catId": 1,
     "catName": "App development",
+    "catClass": "AppDev",
     "projs": [
       {
         "projId": 11,
@@ -34,6 +35,7 @@
   {
     "catId": 2,
     "catName": "Client websites",
+    "catClass": "ClientWeb",
     "projs": [
       {
         "projId": 21,
@@ -109,6 +111,7 @@
   {
     "catId": 3,
     "catName": "Website replicas",
+    "catClass": "Replicas",
     "projs": [
       {
         "projId": 31,

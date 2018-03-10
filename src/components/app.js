@@ -7,7 +7,7 @@ import CategBlock from './categ-block/categ-block'
 class App extends Component {
   render () {
     return (
-      <div id='app'>
+      <div id='app' className='scrollable'>
         <Nav />
         <PageHeader />
         <CategBlock />
