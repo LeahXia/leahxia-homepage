@@ -7,7 +7,7 @@
       {
         "projId": 11,
         "projName":"Share Washi App",
-        "projImg":"ShareWashi",
+        "projImg":"share-washi",
         "langs":[
           {
             "langId":111,
@@ -40,7 +40,7 @@
       {
         "projId": 21,
         "projName":"Res Order",
-        "projImg":"ResOrder",
+        "projImg":"resOrder",
         "langs":[
           {
             "langId":211,
@@ -56,14 +56,10 @@
           },
           {
             "langId":214,
-            "langName":"jQuery"
-          },
-          {
-            "langId":215,
             "langName":"Sass"
           },
           {
-            "langId":216,
+            "langId":215,
             "langName":"Bootstrap"
           }
         ]
@@ -71,7 +67,7 @@
       {
         "projId": 22,
         "projName":"Spiruvive",
-        "projImg":"Spiruvive",
+        "projImg":"spiruvive",
         "langs":[
           {
             "langId":221,
@@ -90,7 +86,7 @@
       {
         "projId": 23,
         "projName":"Create-design",
-        "projImg":"CreativeDesign",
+        "projImg":"create-design",
         "langs":[
           {
             "langId":231,
@@ -143,7 +139,7 @@
       {
         "projId": 32,
         "projName":"Apple",
-        "projImg":"Apple",
+        "projImg":"apple",
         "langs":[
           {
             "langId":321,
@@ -170,7 +166,7 @@
       {
         "projId": 33,
         "projName":"Tribute page",
-        "projImg":"Tribute",
+        "projImg":"tribute",
         "langs":[
           {
             "langId":331,
