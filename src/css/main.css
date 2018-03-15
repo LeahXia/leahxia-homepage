@@ -97,55 +97,55 @@ h2 {
   height: 100vh;
   overflow: hidden; }
 
-#nav-mobile, #nav-mobile ul {
+#nav, #nav ul {
   height: 39px; }
 
-#nav-mobile {
+#nav {
   background: #3C3C3C;
   color: #fff; }
-  #nav-mobile ul {
+  #nav ul {
     position: relative;
     display: flex;
     justify-content: space-between; }
-    #nav-mobile ul #logo {
+    #nav ul #logo {
       font-size: 20px;
       line-height: 24px;
       margin-left: 21px;
       padding-top: 6px; }
-    #nav-mobile ul #bars {
+    #nav ul #bars {
       width: 22px;
       padding-top: 10px;
       margin-right: 21px;
       z-index: 2; }
-      #nav-mobile ul #bars span {
+      #nav ul #bars span {
         background: #fff;
         width: 22px;
         height: 1px;
         border-radius: 1.5px;
         margin-top: 4px;
         display: block; }
-      #nav-mobile ul #bars .bar1-trans, #nav-mobile ul #bars .bar3-trans {
+      #nav ul #bars .bar1-trans, #nav ul #bars .bar3-trans {
         transform-origin: 50% 0%;
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-      #nav-mobile ul #bars .bar1-trans {
+      #nav ul #bars .bar1-trans {
         transform: translate(0, 5px) rotate(135deg); }
-      #nav-mobile ul #bars .bar2-trans {
+      #nav ul #bars .bar2-trans {
         opacity: 0; }
-      #nav-mobile ul #bars .bar3-trans {
+      #nav ul #bars .bar3-trans {
         transform: translate(0, -6px) rotate(45deg); }
-      #nav-mobile ul #bars .bar-back {
+      #nav ul #bars .bar-back {
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-      #nav-mobile ul #bars .bar2-back {
+      #nav ul #bars .bar2-back {
         opacity: 1;
         transition: opacity 0.6s linear; }
-    #nav-mobile ul .hidden, #nav-mobile ul .show {
+    #nav ul .hidden, #nav ul .show {
       transform-origin: 0% 0%;
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-    #nav-mobile ul .hidden {
+    #nav ul .hidden {
       transform: translate(100vw, 0); }
-    #nav-mobile ul .show {
+    #nav ul .show {
       transform: none; }
-    #nav-mobile ul #menu-dropdown {
+    #nav ul #menu-dropdown {
       position: fixed;
       top: 0;
       right: 0;
@@ -155,16 +155,24 @@ h2 {
       text-align: center;
       padding-top: 8px;
       z-index: 1; }
-      #nav-mobile ul #menu-dropdown ul {
+      #nav ul #menu-dropdown ul {
         display: flex;
         flex-direction: column;
         margin-top: 45px; }
-        #nav-mobile ul #menu-dropdown ul li {
+        #nav ul #menu-dropdown ul li {
           line-height: 35px;
           border-bottom: 0.5px solid #BEC8D3;
           margin: 0 9px; }
-        #nav-mobile ul #menu-dropdown ul li:first-of-type {
+        #nav ul #menu-dropdown ul li:first-of-type {
           border-top: 0.5px solid #BEC8D3; }
+    #nav ul #deskMenu {
+      display: block;
+      transform: none; }
+      #nav ul #deskMenu ul li {
+        margin: 12px 30px;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.17px; }
 
 /*header setup */
 #app {

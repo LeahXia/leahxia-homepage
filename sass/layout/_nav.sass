@@ -6,10 +6,10 @@
   height: 100vh
   overflow: hidden
 
-#nav-mobile, #nav-mobile ul
+#nav, #nav ul
   height: $nav-height
 
-#nav-mobile
+#nav
   background: $primary-color
   color: $text-on-black-color
 
@@ -92,3 +92,14 @@
 
         li:first-of-type
           border-top: $bar-height solid $bar-color
+
+    #deskMenu
+      display: block
+      transform: none
+      ul
+        // margin-right: 0px
+        li
+          margin: 12px 30px
+          font-size: 14px
+          font-weight: $font-regular
+          letter-spacing: 0.17px

@@ -6,15 +6,12 @@ class ProjInfo extends Component {
     switch (name) {
       case 'share-washi':
         return `https://leahxia.com/${name}`
-        break
 
       case 'spiruvive':
         return 'https://spiruvive.cn'
-        break
 
       case 'create-design':
         return 'https://create-design.ca'
-        break
 
       default:
         return `https://leahxia.com/projects/${name}`
