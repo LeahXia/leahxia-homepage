@@ -5,7 +5,7 @@ class CategInfo extends Component {
   render () {
     console.log(this.props)
     return (
-      <div className={'categ-blook ' + this.props.theme} id={this.props.catClass}>
+      <div className={'categ-block ' + this.props.theme} id={this.props.catClass}>
         <div className={'categ ' + this.props.singleProj[0]}>
           <div className='categ-title'>
             <h3 className='dot'>{`\u2022`}</h3>

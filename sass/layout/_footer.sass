@@ -4,34 +4,36 @@
   background: $primary-color
   display: flex
   flex-direction: column
+  padding-top: 28px
 
-  #footer-info
-    margin-top: 28px
+  #location
+    display: none
 
-    #location
+  h2
+    margin-bottom: 6px
+
+  p
+    margin-top: $footer-text-top-margin
+
+  .contact-info
+    display: flex
+    width: $footer-cont-width
+    margin: 0 auto
+
+    img
+      width: 23px
+      height: 23px
       display: none
 
-    h2
-      margin-bottom: 6px
-
     p
-      margin-top: $footer-text-top-margin
-
-    .contact-info
-      display: flex
       width: $footer-cont-width
-      margin: 0 auto
 
-      img
-        width: 23px
-        height: 23px
-        display: none
+  #social
+    text-align: center
 
-      p
-        width: $footer-cont-width
-
-    #social
-      text-align: center
-
-      img
-        margin: 15px 8px 25px
+    img
+      margin: 15px 8px 25px
+      width: 30px
+      height: auto
+    #github
+      width: 27px

@@ -61,7 +61,6 @@ body {
 /* Font Colors */
 /* Font Size */
 /* Margin and Size */
-/*typography setup */
 h1 {
   font-size: 36px;
   font-weight: 100;
@@ -110,12 +109,12 @@ h2 {
     #nav ul #logo {
       font-size: 20px;
       line-height: 24px;
-      margin-left: 21px;
+      margin-left: 6.56%;
       padding-top: 6px; }
     #nav ul #bars {
       width: 22px;
       padding-top: 10px;
-      margin-right: 21px;
+      margin-right: 6.56%;
       z-index: 2; }
       #nav ul #bars span {
         background: #fff;
@@ -196,28 +195,99 @@ h2 {
   width: 100vw;
   background: #3C3C3C;
   display: flex;
-  flex-direction: column; }
-  #footer #footer-info {
-    margin-top: 28px; }
-    #footer #footer-info #location {
+  flex-direction: column;
+  padding-top: 28px; }
+  #footer #location {
+    display: none; }
+  #footer h2 {
+    margin-bottom: 6px; }
+  #footer p {
+    margin-top: 0px; }
+  #footer .contact-info {
+    display: flex;
+    width: 100px;
+    margin: 0 auto; }
+    #footer .contact-info img {
+      width: 23px;
+      height: 23px;
       display: none; }
-    #footer #footer-info h2 {
-      margin-bottom: 6px; }
-    #footer #footer-info p {
-      margin-top: 0px; }
-    #footer #footer-info .contact-info {
-      display: flex;
-      width: 100px;
-      margin: 0 auto; }
-      #footer #footer-info .contact-info img {
-        width: 23px;
-        height: 23px;
-        display: none; }
-      #footer #footer-info .contact-info p {
-        width: 100px; }
-    #footer #footer-info #social {
-      text-align: center; }
-      #footer #footer-info #social img {
-        margin: 15px 8px 25px; }
+    #footer .contact-info p {
+      width: 100px; }
+  #footer #social {
+    text-align: center; }
+    #footer #social img {
+      margin: 15px 8px 25px;
+      width: 30px;
+      height: auto; }
+    #footer #social #github {
+      width: 27px; }
+
+@media (min-width: 750px) {
+  #footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0; }
+    #footer #self-info, #footer #contact, #footer #social {
+      width: 33%; }
+    #footer #self-info, #footer #contact {
+      border-right: 0.5px solid #BEC8D3; }
+      #footer #self-info #location, #footer #contact #location {
+        display: flex; }
+      #footer #self-info h2, #footer #contact h2 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 28px; }
+      #footer #self-info p, #footer #contact p {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 100; }
+      #footer #self-info .contact-info:first-of-type, #footer #contact .contact-info:first-of-type {
+        margin-top: 18px; }
+      #footer #self-info .contact-info:last-of-type, #footer #contact .contact-info:last-of-type {
+        margin-bottom: 18px; }
+      #footer #self-info .contact-info, #footer #contact .contact-info {
+        display: flex;
+        width: 180px;
+        margin: 10px auto; }
+        #footer #self-info .contact-info img, #footer #contact .contact-info img {
+          width: 23px;
+          height: 23px;
+          display: inline; }
+        #footer #self-info .contact-info p, #footer #contact .contact-info p {
+          width: 210px;
+          text-align: left;
+          margin-left: 16px;
+          line-height: 23px; }
+    #footer #social img {
+      margin: 38px 10px 0;
+      width: 45px;
+      height: 45px; }
+    #footer #social #github {
+      width: 38px; } }
+@media (min-width: 1010px) {
+  #footer #self-info h2, #footer #contact h2 {
+    margin-top: 42px;
+    font-size: 48px;
+    line-height: 35px; }
+  #footer #self-info p, #footer #contact p {
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 300; }
+  #footer #self-info .contact-info:first-of-type, #footer #contact .contact-info:first-of-type {
+    margin-top: 34px; }
+  #footer #self-info .contact-info:last-of-type, #footer #contact .contact-info:last-of-type {
+    margin-bottom: 22px; }
+  #footer #self-info .contact-info, #footer #contact .contact-info {
+    width: 210px; }
+    #footer #self-info .contact-info img, #footer #contact .contact-info img {
+      width: 23px;
+      height: 23px; }
+  #footer #social img {
+    margin: 54px 10px 42px;
+    width: 50px;
+    height: 50px; }
+  #footer #social #github {
+    width: 42px; } }
 
 /*# sourceMappingURL=main.css.map */

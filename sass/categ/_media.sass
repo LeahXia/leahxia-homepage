@@ -1,8 +1,129 @@
-@media (mix-width:1010px) {
+@media (min-width:400px)
+  #app .categ-block .singleCateg .proj-detail
+    .proj-img
+      top: -30%
 
-}
+@media (min-width:510px)
+  h3
+    font-size: 18px
+    line-height: 21px
+  p
+    font-size: 14px
+    line-height: 22px
+
+  #app .categ-block .singleCateg .proj-detail
+    .proj-img
+      top: -40%
+      width: 290px
+
+@media (min-width:750px)
+  h3
+    font-size: 18px
+    line-height: 21px
+  p
+    font-size: 14px
+    line-height: 22px
+  #app .categ-block .singleCateg .proj-detail
+    .proj-img
+      width: 305px
+
+@media (min-width:1010px)
+  h1
+    font-size: 80px
+    line-height: 96px
+    letter-spacing: -3.2px
+
+  h2, #menu-dropdown ul li a
+    font-size: 25px
+    line-height: 38px
+
+  h2
+    letter-spacing: 0.1px
+
+  h3
+    font-size: 32px
+    line-height: 39px
+  h4
+    font-size: 22px
+    line-height: 27px
+  p
+    font-size: 18px
+    line-height: 27px
+
+  #header
+    #name
+      margin: 10px 37px 0
+
+      h1
+        margin: auto 52px
+
+      .title-bar
+        flex: 5
+        margin-top: 48px
+
+    #title
+      margin-top: 3px
+
+  .categ-block
+    .categ
+      padding-top: 36px
+      padding-bottom: 80px
+
+      .categ-title
+        height: 35px
+
+        .dot
+          height: 23px
+          font-size: 55px
+          margin-left: $dot-margin - 8px
+
+        .categ-name
+          margin-left: 34px
+          top: -8px
+          padding-bottom: 6px
 
 
-@media (min-width:750px){
+      .proj-detail
+        // margin-left: 50px
 
-}
+        .proj-info
+          flex-direction: column
+          flex-wrap: nowrap
+          width: 28%
+          margin: 58px 18px 0
+
+          .proj-img
+            width: 266px
+            height: 178px
+
+          .proj-text
+            margin-top: 42px
+            .lang-name
+              margin-left: 12px
+
+  #app .categ-block .singleCateg
+    margin-top: 42px
+
+    .dot
+      margin-top: $dot-margin
+
+    .proj-info
+      width: 100%
+      position: relative
+
+      .proj-img
+        position: absolute
+        left: 480px
+        top: -55%
+        box-shadow: none
+        width: 428px
+        height: auto
+
+  .categ-block .categ .proj-detail .proj-info .singleText
+    width: 100%
+    margin-left: 0
+    margin-top: $dot-margin
+
+    .proj-name
+      color: $highlight-color
+      

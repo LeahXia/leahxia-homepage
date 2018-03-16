@@ -90,15 +90,15 @@
         "langs":[
           {
             "langId":231,
-            "langName":"HTML"
+            "langName":"React"
           },
           {
             "langId":232,
-            "langName":"CSS"
+            "langName":"Sass"
           },
           {
             "langId":233,
-            "langName":"Foundation"
+            "langName":"Flexbox"
           }
         ]
       }
