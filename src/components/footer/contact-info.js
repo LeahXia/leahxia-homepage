@@ -4,7 +4,7 @@ class ContactInfo extends Component {
   render () {
     return (
       <div className='contact-info' id={this.props.contName}>
-        <img src={require(`../../img/${this.props.contImg}.png`)} alt={this.props.contName} />
+        <img src={require(`../../img/${this.props.contName}.png`)} alt={this.props.contName} />
         <p>{this.props.contInfo}</p>
       </div>
     )

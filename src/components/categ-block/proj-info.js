@@ -13,6 +13,9 @@ class ProjInfo extends Component {
       case 'create-design':
         return 'https://create-design.ca'
 
+      case 'blog':
+        return 'https://nameless-tor-31129.herokuapp.com/'
+
       default:
         return `https://leahxia.com/projects/${name}`
     }

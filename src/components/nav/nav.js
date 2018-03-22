@@ -1,19 +1,18 @@
 import React, { Component } from 'react'
 
 class Nav extends Component {
-
-  constructor(props){
+  constructor (props) {
     super(props)
     this.state = {
-      showHideDropdown:'hidden',
-      pageScroll:'scroll',
-      bar1:'bar-back',
-      bar2:'',
-      bar3:''
+      showHideDropdown: 'hidden',
+      pageScroll: 'scroll',
+      bar1: 'bar-back',
+      bar2: '',
+      bar3: ''
     }
   }
 
-  toggleDropdown = () => {
+  toggleDropdown () {
     var barClass1, barClass2, barClass3, isShown, pageScroll
     if (this.state.bar1 === 'bar-back') {
       barClass1 = 'bar1-trans'
@@ -44,24 +43,26 @@ class Nav extends Component {
     })
   }
 
-  dropdownItemClicked = (id) => {
-    this.toggleDropdown()
+  dropdownItemClicked (id) {
+    if (window.innerWidth < 750) {
+      this.toggleDropdown()
+    }
     document.getElementById(id).scrollIntoView()
   }
 
-  renderToggleMenu = () => {
-
-    if (window.innerWidth < 750)
-      return(
-        <li id='bars' onClick={this.toggleDropdown.bind(this)}>
-          <span id='bar1' className={this.state.bar1}/>
-          <span id='bar2' className={this.state.bar2}/>
-          <span id='bar3' className={this.state.bar3}/>
+  renderToggleMenu () {
+    if (window.innerWidth < 750) {
+      return (
+        <li id='bars' onClick={() => this.toggleDropdown()}>
+          <span id='bar1' className={this.state.bar1} />
+          <span id='bar2' className={this.state.bar2} />
+          <span id='bar3' className={this.state.bar3} />
         </li>
       )
+    }
   }
 
-  menuListId = () => {
+  menuListId () {
     return (window.innerWidth < 750) ? 'menu-dropdown' : 'deskMenu'
   }
 
@@ -74,16 +75,16 @@ class Nav extends Component {
           <li id={this.menuListId()} className={this.state.showHideDropdown}>
             <ul>
               <li>
-                <a onClick={this.dropdownItemClicked.bind(this, 'nav')} >App Portfolio</a>
+                <a onClick={() => this.dropdownItemClicked('nav')} >App Portfolio</a>
               </li>
               <li>
-                <a onClick={this.dropdownItemClicked.bind(this, 'ClientWeb')} >Web Portfolio</a>
+                <a onClick={() => this.dropdownItemClicked('ClientWeb')} >Web Portfolio</a>
               </li>
               <li>
-                <a onClick={this.dropdownItemClicked.bind(this, 'ClientWeb')} >About</a>
+                <a onClick={() => this.dropdownItemClicked('ClientWeb')} >About</a>
               </li>
               <li>
-                <a onClick={this.dropdownItemClicked.bind(this, 'footer')} >Contact</a>
+                <a onClick={() => this.dropdownItemClicked('footer')} >Contact</a>
               </li>
             </ul>
           </li>

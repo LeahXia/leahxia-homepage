@@ -187,5 +187,153 @@
         ]
       }
     ]
+  },
+  {
+    "catId": 4,
+    "catName": "Utilities",
+    "catClass": "utilities",
+    "projs": [
+      {
+        "projId": 41,
+        "projName":"Calculator",
+        "projImg":"calculator",
+        "langs":[
+          {
+            "langId":411,
+            "langName":"HTML"
+          },
+          {
+            "langId":412,
+            "langName":"CSS"
+          },
+          {
+            "langId":413,
+            "langName":"jQuery"
+          },
+          {
+            "langId":414,
+            "langName":"Google-ads"
+          }
+        ]
+      },
+      {
+        "projId":42,
+        "projName":"Analog Clock",
+        "projImg":"clock",
+        "langs":[
+          {
+            "langId":421,
+            "langName":"HTML"
+          },
+          {
+            "langId":422,
+            "langName":"CSS"
+          },
+          {
+            "langId":423,
+            "langName":"Javascript"
+          }
+        ]
+      },
+      {
+        "projId": 43,
+        "projName":"Blog",
+        "projImg":"blog",
+        "langs":[
+          {
+            "langId":431,
+            "langName":"Ruby on Rails"
+          },
+          {
+            "langId":432,
+            "langName":"CSS"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "catId": 5,
+    "catName": "Games",
+    "catClass": "games",
+    "projs": [
+      {
+        "projId": 51,
+        "projName":"Typing Speed",
+        "projImg":"typing-speed",
+        "langs":[
+          {
+            "langId":511,
+            "langName":"HTML"
+          },
+          {
+            "langId":512,
+            "langName":"CSS"
+          },
+          {
+            "langId":513,
+            "langName":"jQuery"
+          },
+          {
+            "langId":514,
+            "langName":"Google-ads"
+          }
+        ]
+      },
+      {
+        "projId": 52,
+        "projName":"Color grids",
+        "projImg":"grids",
+        "langs":[
+          {
+            "langId":521,
+            "langName":"HTML"
+          },
+          {
+            "langId":522,
+            "langName":"CSS"
+          },
+          {
+            "langId":523,
+            "langName":"Bootstrap"
+          },
+          {
+            "langId":524,
+            "langName":"jQuery"
+          },
+          {
+            "langId":525,
+            "langName":"Google-ads"
+          }
+        ]
+      },
+      {
+        "projId": 53,
+        "projName":"Ruby Games",
+        "projImg":"ruby-games",
+        "langs":[
+          {
+            "langId":531,
+            "langName":"Hang Man"
+          },
+          {
+            "langId":532,
+            "langName":"Baby Dragon"
+          },
+          {
+            "langId":533,
+            "langName":"Master Mind"
+          },
+          {
+            "langId":534,
+            "langName":"Orange Tree"
+          },
+          {
+            "langId":535,
+            "langName":"TicTacToe"
+          }
+        ]
+      }
+    ]
   }
 ]

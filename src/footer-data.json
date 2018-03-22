@@ -2,19 +2,16 @@
   {
     "contId": 1,
     "contName": "location",
-    "contInfo": "Vancouver, BC",
-    "contImg": "phone"
+    "contInfo": "Vancouver, BC"
   },
   {
     "contId": 2,
     "contName": "phone",
-    "contInfo": "778-710-7010",
-    "contImg": "phone"
+    "contInfo": "778-710-7010"
   },
   {
     "contId": 3,
     "contName": "email",
-    "contInfo": "leahxia5@gmail.com",
-    "contImg": "email"
+    "contInfo": "leahxia5@gmail.com"
   }
 ]
