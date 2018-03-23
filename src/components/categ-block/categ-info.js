@@ -6,7 +6,7 @@ class CategInfo extends Component {
     console.log(this.props)
     return (
       <div className={'categ-block ' + this.props.theme} id={this.props.catClass}>
-        <div className={'categ ' + this.props.singleProj[0]}>
+        <div className={this.props.singleProj}>
           <div className='categ-title'>
             <h3 className='dot'>{`\u2022`}</h3>
             <h3 className='categ-name'>{this.props.catName.toUpperCase()}</h3>

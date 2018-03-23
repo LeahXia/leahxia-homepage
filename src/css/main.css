@@ -197,9 +197,12 @@ h2 {
   z-index: 99;
   cursor: pointer; }
   #backToTop img {
-    width: 60px;
+    width: 10vw;
     height: auto; }
 
+@media (min-width: 510px) {
+  #backToTop img {
+    width: 50px; } }
 /*footer setup */
 #footer {
   width: 100vw;

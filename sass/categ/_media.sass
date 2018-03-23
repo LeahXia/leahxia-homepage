@@ -1,7 +1,8 @@
 @media (min-width:400px)
-  #app .categ-block .singleCateg .proj-detail
-    .proj-img
-      top: -30%
+  #app .categ-block
+    .categ .proj-detail .proj-info
+      .proj-text
+        margin-left: 30px
 
 @media (min-width:510px)
   h3
@@ -11,10 +12,40 @@
     font-size: 14px
     line-height: 22px
 
-  #app .categ-block .singleCateg .proj-detail
-    .proj-img
-      top: -40%
-      width: 290px
+  #app .categ-block
+    .singleCateg, .categ
+      padding-bottom: 45px
+      .categ-title
+        .dot
+          height: 28px
+          font-size: 36px
+          left: $dot-margin - 2px
+
+    .categ
+      padding-top: 32px
+      .proj-detail
+        .proj-info
+          margin-top: 30px
+          flex-direction: column
+          width: 50%
+          margin-top: 30px
+
+          .proj-img
+            width: 200px
+            height: auto
+
+          .proj-text
+            margin-left: 12px
+            margin-top: 18px
+            .lang-name
+              margin-left: 12px
+
+    .singleCateg
+      margin-top: 32px
+      .proj-detail .proj-info
+        margin-top: 20px
+        .proj-text h4
+          margin-bottom: 8px
 
 @media (min-width:750px)
   h3
@@ -23,9 +54,21 @@
   p
     font-size: 14px
     line-height: 22px
-  #app .categ-block .singleCateg .proj-detail
-    .proj-img
-      width: 305px
+
+  #app .categ-block
+    .singleCateg, .categ
+      .categ-title
+        .dot
+          left: $dot-margin - 2.7px
+    .singleCateg .proj-detail
+      .proj-info .proj-img-container
+        .proj-img
+          height: 120%
+          margin-top: -5%
+    .categ
+      .proj-detail
+        .proj-info
+          width: 33%
 
 @media (min-width:1010px)
   h1
@@ -64,30 +107,45 @@
     #title
       margin-top: 3px
 
-  .categ-block
-    .categ
-      padding-top: 36px
+  #app .categ-block
+    .singleCateg, .categ
       padding-bottom: 80px
-
       .categ-title
-        height: 35px
-
         .dot
-          height: 23px
+          height: 40px
           font-size: 55px
-          margin-left: $dot-margin - 8px
-
+          left: $dot-margin - 7.8px
         .categ-name
-          margin-left: 34px
-          top: -8px
+          left: 34px
+          top: -5px
           padding-bottom: 6px
 
 
+    .singleCateg
+      margin-top: 42px
+      .categ-title
+        height: 45px
+        .dot
+          margin-top: $dot-margin - 6px
+        .categ-name
+          top: -16px
       .proj-detail
-        // margin-left: 50px
-
+        margin-left: 50px
         .proj-info
-          flex-direction: column
+          .proj-img-container
+            .proj-img
+              height: 125%
+            .proj-text
+              width: 100%
+              margin-left: 0
+              margin-top: $dot-margin
+
+    .categ
+      padding-top: 36px
+      .categ-title
+        height: 35px
+      .proj-detail
+        .proj-info
           flex-wrap: nowrap
           width: 28%
           margin: 58px 18px 0
@@ -98,32 +156,3 @@
 
           .proj-text
             margin-top: 42px
-            .lang-name
-              margin-left: 12px
-
-  #app .categ-block .singleCateg
-    margin-top: 42px
-
-    .dot
-      margin-top: $dot-margin
-
-    .proj-info
-      width: 100%
-      position: relative
-
-      .proj-img
-        position: absolute
-        left: 480px
-        top: -55%
-        box-shadow: none
-        width: 428px
-        height: auto
-
-  .categ-block .categ .proj-detail .proj-info .singleText
-    width: 100%
-    margin-left: 0
-    margin-top: $dot-margin
-
-    .proj-name
-      color: $highlight-color
-      

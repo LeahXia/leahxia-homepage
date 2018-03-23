@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Lang from './lang.js'
 
 class ProjInfo extends Component {
-  websiteUrl = (name) => {
+  websiteUrl (name) {
     switch (name) {
       case 'share-washi':
         return `https://leahxia.com/${name}`
@@ -24,14 +24,14 @@ class ProjInfo extends Component {
   render () {
     return (
       <div className='proj-info'>
-        <a href={this.websiteUrl(this.props.projImg)} target='_blank'>
+        <a className='proj-img-container' href={this.websiteUrl(this.props.projImg)} target='_blank'>
           <img
             src={require(`../../img/${this.props.projImg}.png`)}
             className='proj-img'
             alt='project'
           />
         </a>
-        <div className={'proj-text ' + this.props.singleProj[1]}>
+        <div className='proj-text'>
           <a href={this.websiteUrl(this.props.projImg)} target='_blank'>
             <h4 className='proj-name'>{this.props.projName}</h4>
           </a>

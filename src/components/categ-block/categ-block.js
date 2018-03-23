@@ -8,7 +8,7 @@ class CategBlock extends Component {
     return projData.map(categ => {
       var categID = categ['catId']
       var theme = categ['catId'] % 2 === 0 ? 'theme-black' : 'theme-white'
-      var singleProj = categ['catId'] === 1 ? ['singleCateg', 'singleText'] : []
+      var singleProj = categ['catId'] === 1 ? 'singleCateg' : 'categ'
       return (
         <CategInfo
           key={categID}

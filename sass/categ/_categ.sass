@@ -1,55 +1,90 @@
-.categ-block
+#app .categ-block
   width: 100vw
   height: auto
 
-  .categ
+  .singleCateg, .categ
     margin-left: $margin-left
     margin-right: $margin-right
     border-left: $bar-height solid $bar-color
-    padding-top: $categ-margin-top
     padding-bottom: $categ-margin-bottom
-
     .categ-title
       height: 23px
+      position: relative
 
       h3
         display: inline-block
-        // height: 23px
-
       .dot
         height: 23px
         font-size: 29px
-        margin-left: $dot-margin
         color: $title-dot-color
+        position: absolute
+        top: -2px
+        left: $dot-margin
 
       .categ-name
         border-bottom: $bar-height solid $bar-color
-        margin-left: $lang-margin-left
-        position: relative
-        top: -5px
+        position: absolute
+        top: 0px
+        left: 14px
         padding-bottom: 2px
-
-
     .proj-detail
       display: flex
       flex-wrap: wrap
       margin-left: 17px
-
       .proj-info
         display: flex
         margin-top: $margin-top
-
+        width: 100%
         .proj-text
-          margin-left: 12px
-
           h4
-            margin-bottom: 4px
-
+            margin-bottom: 6px
           .lang p
             display: inline-block
-
           .lang-name
             margin-left: $lang-margin-left
+
+  .categ
+    padding-top: $categ-margin-top
+    .proj-detail
+      .proj-info
+        .proj-text
+          margin-left: 3.75vw
+
+  .singleCateg
+    padding-top: 0
+    margin-top: $categ-margin-top + 16px
+    .categ-title
+      .dot
+        margin-top: $dot-margin
+      .categ-name
+        top: -8px
+
+    .proj-detail .proj-info
+      margin-top: 10px
+      position: relative
+
+      .proj-img-container, .proj-text
+        margin-left: 0
+        margin-top: $dot-margin
+
+      .proj-img-container
+        width: 60%
+        position: absolute
+        top: 0
+        left: 40%
+        right: 0
+        bottom: 0
+        .proj-img
+          float: left
+          left: 30%
+          box-shadow: none
+          width: auto
+          height: 100%
+
+      .proj-text
+        width: 100%
+        .proj-name
+          color: $highlight-color
 
 .theme-black
   background: $primary-color
@@ -58,30 +93,3 @@
 
 .theme-white
   background: $secondary-color
-
-#app .categ-block .singleCateg
-  padding-top: 0
-  margin-top: $categ-margin-top
-
-  .dot
-    margin-top: $dot-margin
-
-  .proj-info
-    width: 100%
-    position: relative
-
-    .proj-img
-      position: absolute
-      left: 34.3vw
-      top: -5%
-      box-shadow: none
-      width: 49.5vw
-      height: auto
-
-.categ-block .categ .proj-detail .proj-info .singleText
-  width: 100%
-  margin-left: 0
-  margin-top: $dot-margin
-
-  .proj-name
-    color: $highlight-color
