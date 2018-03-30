@@ -41,9 +41,9 @@ class Footer extends Component {
         </div>
         {this.renderContact()}
         <div id='social'>
-          <img id='github' src={GitHub} alt='github' />
-          <img src={Web} alt='web' />
-          <img src={LinkedIn} alt='linkedIn' />
+          <a href='https://github.com/LeahXia' target='_blank' rel="noopener noreferrer"><img id='github' src={GitHub} alt='github' /></a>
+          <a href='https://leahxia.com'><img src={Web} alt='web' /></a>
+          <a href='http://linkedin.com/in/leahxia' target='_blank' rel="noopener noreferrer"><img src={LinkedIn} alt='linkedIn' /></a>
         </div>
       </div>
     )
