@@ -7,6 +7,9 @@ class ProjInfo extends Component {
       case 'share-washi':
         return `https://leahxia.com/${name}`
 
+      case 'resOrder'
+        return 'https://github.com/LeahXia/resorder'  
+
       case 'spiruvive':
         return 'https://spiruvive.cn'
 
@@ -15,6 +18,9 @@ class ProjInfo extends Component {
 
       case 'blog':
         return 'https://nameless-tor-31129.herokuapp.com/'
+
+      case 'ruby-games'
+        return 'https://github.com/LeahXia/RubyGames'
 
       default:
         return `https://leahxia.com/projects/${name}`
