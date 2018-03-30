@@ -228,7 +228,8 @@ p {
     #app .categ-block .singleCateg .proj-detail {
       margin-left: 50px; }
       #app .categ-block .singleCateg .proj-detail .proj-info .proj-img-container .proj-img {
-        height: 125%; }
+        height: 145%;
+        margin-top: -7%; }
       #app .categ-block .singleCateg .proj-detail .proj-info .proj-img-container .proj-text {
         width: 100%;
         margin-left: 0;
